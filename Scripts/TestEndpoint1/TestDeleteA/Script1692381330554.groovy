@@ -17,19 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Chaining1 = WS.sendRequest(findTestObject('Endpoint1-albums/GET-A'))
+WS.sendRequest(findTestObject('Endpoint1-albums/DELETE-A'))
 
-def slurper = new groovy.json.JsonSlurper()
+DeleteA = WS.sendRequestAndVerify(findTestObject('Endpoint1-albums/DELETE-A'))
 
-def result1 = slurper.parseText(Chaining1.getResponseBodyContent())
-
-def value1 = result1[1].title
-
-println('value extracted is: ' + value1)
-
-GlobalVariable.title = value1
-
-println('Global Variable now: ' + GlobalVariable.title)
-
-WS.sendRequestAndVerify(findTestObject('Endpoint1-albums/POST-B-Chaining'))
+WS.verifyResponseStatusCode(DeleteA, 200)
 
