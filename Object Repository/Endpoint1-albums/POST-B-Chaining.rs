@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;userId\&quot;: 10,\n    \&quot;id\&quot;: 102,\n    \&quot;title\&quot;: \&quot;${title}\&quot;\n  }\n&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;userId\&quot;: 10,\n    \&quot;id\&quot;: 102,\n    \&quot;title\&quot;: \&quot;${title}\&quot;\n  }&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -63,7 +63,6 @@ WS.verifyResponseStatusCode(response, 201)
 
 assertThat(response.getStatusCode()).isEqualTo(201)
 
-WS.verifyElementPropertyValue(response, 'title', 'sunt qui excepturi placeat culpa')
-</verificationScript>
+WS.verifyElementPropertyValue(response, 'title', 'sunt qui excepturi placeat culpa')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
