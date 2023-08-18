@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET-B</name>
+   <name>DELETE-A</name>
    <tag></tag>
-   <elementGuidId>38b48561-bec0-4c64-951c-5ef65913e38f</elementGuidId>
+   <elementGuidId>df95d8e6-6824-44f8-b607-7dda3df29734</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
@@ -15,8 +15,8 @@
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://jsonplaceholder.typicode.com/albums/8</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>https://jsonplaceholder.typicode.com/albums/2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,11 +42,6 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
-
-
-WS.verifyElementPropertyValue(response, 'userId', '1')
-WS.verifyElementPropertyValue(response, 'id', '8')
-WS.verifyElementPropertyValue(response, 'title', 'qui fuga est a eum')
 
 </verificationScript>
    <wsdlAddress></wsdlAddress>

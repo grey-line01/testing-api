@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET-B</name>
+   <name>GET-C</name>
    <tag></tag>
-   <elementGuidId>38b48561-bec0-4c64-951c-5ef65913e38f</elementGuidId>
+   <elementGuidId>4ca07d66-f8ac-4e35-bfdd-5b0ad72f9095</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
@@ -16,7 +16,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://jsonplaceholder.typicode.com/albums/8</restUrl>
+   <restUrl>https://jsonplaceholder.typicode.com/albums/10</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -45,9 +45,8 @@ assertThat(response.getStatusCode()).isEqualTo(200)
 
 
 WS.verifyElementPropertyValue(response, 'userId', '1')
-WS.verifyElementPropertyValue(response, 'id', '8')
-WS.verifyElementPropertyValue(response, 'title', 'qui fuga est a eum')
-
+WS.verifyElementPropertyValue(response, 'id', '10')
+WS.verifyElementPropertyValue(response, 'title', 'distinctio laborum qui')
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
