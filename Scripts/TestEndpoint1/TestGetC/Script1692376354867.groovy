@@ -17,14 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('Endpoint1-albums/GET-B'))
+WS.sendRequest(findTestObject('Endpoint1-albums/GET-C'))
 
-GetB = WS.sendRequestAndVerify(findTestObject('Endpoint1-albums/GET-B'))
+GetC = WS.sendRequestAndVerify(findTestObject('Endpoint1-albums/GET-C'))
 
-WS.verifyResponseStatusCode(GetB, 200)
+WS.verifyResponseStatusCode(GetC, 200)
 
-WS.verifyElementPropertyValue(GetB, 'userId', '1')
+WS.verifyElementPropertyValue(GetC, 'userId', '1')
 
-WS.verifyElementPropertyValue(GetB, 'id', '8')
+WS.verifyElementPropertyValue(GetC, 'id', '10')
 
-WS.verifyElementPropertyValue(GetB, 'title', 'qui fuga est a eum')
+WS.verifyElementPropertyValue(GetC, 'title', 'distinctio laborum qui')

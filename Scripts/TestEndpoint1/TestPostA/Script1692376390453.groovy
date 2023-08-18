@@ -17,7 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-GetA = WS.sendRequest(findTestObject('Endpoint1-albums/GET-A'))
+WS.sendRequest(findTestObject('Endpoint1-albums/POST-A'))
 
-WS.verifyResponseStatusCode(GetA, 200)
+PostA = WS.sendRequestAndVerify(findTestObject('Endpoint1-albums/POST-A'))
 
+WS.verifyResponseStatusCode(PostA, 201)
+
+WS.verifyElementPropertyValue(PostA, 'userId', '10')
+
+WS.verifyElementPropertyValue(PostA, 'id', '101')
+
+WS.verifyElementPropertyValue(PostA, 'title', 'Grey')

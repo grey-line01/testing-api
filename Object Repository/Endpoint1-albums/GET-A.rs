@@ -39,9 +39,30 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-
 WS.verifyResponseStatusCode(response, 200)
 
-assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(200)
+
+
+WS.verifyElementPropertyValue(response, '[1].userId', '1')
+WS.verifyElementPropertyValue(response, '[1].id', '2')
+WS.verifyElementPropertyValue(response, '[1].title', 'sunt qui excepturi placeat culpa')
+WS.verifyElementPropertyValue(response, '[2].userId', '1')
+WS.verifyElementPropertyValue(response, '[2].id', '3')
+WS.verifyElementPropertyValue(response, '[2].title', 'omnis laborum odio')
+WS.verifyElementPropertyValue(response, '[3].userId', '1')
+WS.verifyElementPropertyValue(response, '[3].id', '4')
+WS.verifyElementPropertyValue(response, '[3].title', 'non esse culpa molestiae omnis sed optio')
+WS.verifyElementPropertyValue(response, '[4].userId', '1')
+WS.verifyElementPropertyValue(response, '[4].id', '5')
+WS.verifyElementPropertyValue(response, '[4].title', 'eaque aut omnis a')
+WS.verifyElementPropertyValue(response, '[5].userId', '1')
+WS.verifyElementPropertyValue(response, '[5].id', '6')
+WS.verifyElementPropertyValue(response, '[5].title', 'natus impedit quibusdam illo est')
+WS.verifyElementPropertyValue(response, '[6].userId', '1')
+WS.verifyElementPropertyValue(response, '[6].id', '7')
+WS.verifyElementPropertyValue(response, '[6].title', 'quibusdam autem aliquid et et quia')
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
