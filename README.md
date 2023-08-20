@@ -27,7 +27,7 @@ URL : https://jsonplaceholder.typicode.com/albums/2
 **Test Case** 
 **TestGetA-1** sampai **TestGetA-6** -> menguji apakah response status codenya 200 (OK), memverifikasikan apakah jumlah elemen sudah sesuai, memverifikasikan apakah nilai properti dari elemen sudah sesuai. 
 
-**TestGetB** dan **TestGetC** -> menguji menguji apakah response status codenya 200 (SUCCESS), memverifikasikan apakah nilai properti dari elemen sudah sesuai. 
+**TestGetB** dan **TestGetC** -> menguji menguji apakah response status codenya 200 (OK), memverifikasikan apakah nilai properti dari elemen sudah sesuai. 
 
 **TestPostA** -> menguji apakah response status codenya 201 (CREATED), memverifikasikan apakah nilai properti dari elemen sudah sesuai.
 
@@ -60,7 +60,7 @@ URL : https://jsonplaceholder.typicode.com/todos/2
 **Test Case** 
 **TestGet_01_A** sampai **TestGet_01_F** -> menguji apakah response status codenya 200 (OK), memverifikasikan apakah jumlah elemen sudah sesuai, memverifikasikan apakah nilai properti dari elemen sudah sesuai. 
 
-**TestGet_02** dan **TestGet_03** -> menguji menguji apakah response status codenya 200 (SUCCESS), memverifikasikan apakah nilai properti dari elemen sudah sesuai. 
+**TestGet_02** dan **TestGet_03** -> menguji menguji apakah response status codenya 200 (OK), memverifikasikan apakah nilai properti dari elemen sudah sesuai. 
 
 **TestPost_01** -> menguji apakah response status codenya 201 (CREATED), memverifikasikan apakah nilai properti dari elemen sudah sesuai.
 
